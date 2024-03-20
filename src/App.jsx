@@ -1,8 +1,15 @@
-const App = () => {
-  return (
-    <main className="bg-black">
-    </main>
-  )
-}
+import Navbar from './components/Navbar.jsx';
+import Hero from './components/Hero.jsx';
+import Highlights from './components/Highlights.jsx';
 
-export default App
+const App = () => {
+    return (
+        <main className="bg-black">
+            <Navbar />
+            <Hero />
+            <Highlights />
+        </main>
+    );
+};
+
+export default App;
