@@ -1,8 +1,11 @@
 import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import { hightlightsSlides } from '../constants/index.js';
 import { useEffect, useRef, useState } from 'react';
 import { pauseImg, playImg, replayImg } from '../utils/index.js';
 import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const VideoCarousel = () => {
     const videoRef = useRef([null]);
